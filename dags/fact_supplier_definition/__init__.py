@@ -185,12 +185,12 @@ def transform_data(name_csv: str) -> bool:
             to_api = {'requested_products':df.to_dict('records')}
             _ = connect_to_api(to_api,headers,URL)
             if _ == None:
-                print('Блянон')
+                print('None')
                 continue
             # while _ == None:
             #     time.sleep(10)
             #     _ = connect_to_api(to_api,headers,URL)
-            #     print('Блянон')
+            #     print('None')
             # print(_)
             list_sup.extend(_)
             # print('Перерыв')
